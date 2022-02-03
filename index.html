@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple tic-tac-toe</title>
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body class="min-h-screen flex flex-col justify-between bg-black">
+  <main class="flex flex-col justify-evenly flex-grow relative">
+    <!-- <div>
+      <h1 class="text-center text-white text-4xl">A Simple Tic-Tac-Toe</h1>
+    </div> -->
+    <div class="board-and-items w-fit mx-auto relative">
+      <!-- <div class="z-10 mx-auto absolute h-96 w-96 flex justify-center items-center">
+        <div class="h-72 w-72 bg-white flex flex-col justify-center">
+          <label for="Player 1">Player 1</label>
+          <input type="text" name="Player 1" id="Player 1">
+
+          <label for="Player 2">Player 2</label>
+          <input type="text" name="Player 2" id="Player 2">
+
+          <button type="submit">Play</button>
+        </div>
+      </div> -->
+
+      <div id="board" class="grid grid-cols-3 grid-rows-3 sm:w-96 sm:h-96 min:w-[90vmin] min:h-[90vmin] z-0">
+        <div id="0" class="square"></div>
+        <div id="1" class="square border-white border-l border-r"></div>
+        <div id="2" class="square"></div>
+        <div id="3" class="square border-white border-t border-b"></div>
+        <div id="4" class="square border-white border-t border-b border-l border-r"></div>
+        <div id="5" class="square border-white border-t border-b"></div>
+        <div id="6" class="square"></div>
+        <div id="7" class="square border-white border-l border-r"></div>
+        <div id="8" class="square"></div>
+      </div>
+
+    </div>
+    <div id="players" class="text-white flex justify-evenly">
+      <div id="p1" class="flex flex-col items-center">
+        <div id="p1-name">Player 1</div>
+        <div id="p1-score">0</div>
+      </div>
+      <div id="p2" class="flex flex-col items-center">
+        <div id="p2-name">Player 2</div>
+        <div id="p2-score">0</div>
+      </div>
+    </div>
+  </main>
+  <footer class="">
+    <p class="text-center text-white">© Adam James Yeomans</p>
+  </footer>
+  <script src="index.js"></script>
+</body>
+</html>

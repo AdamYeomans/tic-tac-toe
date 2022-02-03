@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .square {
+    @apply bg-black text-white w-full h-full;
+  }
+}
