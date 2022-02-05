@@ -469,12 +469,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .square {
+  display: flex;
   height: 100%;
   width: 100%;
+  align-items: center;
+  justify-content: center;
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  padding: 0.25rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.visible {
+  visibility: visible;
 }
 
 .absolute {
@@ -498,12 +506,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-right: auto;
 }
 
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
 
 .grid {
   display: grid;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-96 {
@@ -516,6 +532,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .w-fit {
@@ -580,6 +600,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-width: 1px;
 }
 
+.border-none {
+  border-style: none;
+}
+
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -620,29 +644,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 640px) {
-  .sm\:h-\[90vmin\] {
-    height: 90vmin;
-  }
-
   .sm\:h-96 {
     height: 24rem;
   }
 
-  .sm\:w-\[90vmin\] {
-    width: 90vmin;
-  }
-
   .sm\:w-96 {
-    width: 24rem;
-  }
-}
-
-@media (min-width: 768px) {
-  .md\:h-96 {
-    height: 24rem;
-  }
-
-  .md\:w-96 {
     width: 24rem;
   }
 }

@@ -4,6 +4,6 @@
 
 @layer components {
   .square {
-    @apply bg-black text-white w-full h-full;
+    @apply bg-black text-white w-full h-full flex justify-center items-center p-1;
   }
 }
